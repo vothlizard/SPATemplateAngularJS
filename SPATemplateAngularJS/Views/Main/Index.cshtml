@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "SPA Template AngularJS";
+}
+<header>
+    <div id="top-menu">
+        <nav class="navbar navbar-default" role="navigation" style="background-color: #40B238;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand" style="color: #ffffff; font-weight:700">SPA Template</a>
+                <ul class="nav navbar-nav navbar-left">
+                    <li role="separator" class="navbar divider-vertical" style="color: #ffffff;"></li>
+                    <li><a href="#" style="color: #ffffff;font-weight:700">AngularJS</a></li>
+                </ul>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" style="color: #ffffff;font-weight:700">Link1</a></li>
+                        <li><a href="#" style="color: #ffffff;font-weight:700">Link2</a></li>
+                        <li>
+                            <a href="#" style="color: #ffffff;font-weight:700">Link3</a>
+                        </li>
+                        <li><a href="#" style="color: #ffffff;font-weight:700">Link4</a></li>
+                        <li role="separator" class="navbar divider-vertical" style="color: #ffffff;"></li>
+                        @*<li class="user-logged-in">
+                                <user-info id="loggedInUser" userinfo-url="http://www.scm-rms.ca/oauth/v1/core/connect/userinfo"
+                                           scope="openid">
+                                </user-info>
+                            </li>*@
+
+                        <li style="margin-right:25px">
+                            @*<oauth2 authorization-url="https://www.scm-rms.ca/oauth/v1/core/connect/authorize"
+                                        sign-out-url="https://www.scm-rms.ca/oauth/v1/core/connect/endsession"
+                                        sign-out-append-token="true"
+                                        sign-out-redirect-url="http://localhost:64402"
+                                        client-id="WorkflowLink"
+                                        buttonclass="btn btn-link"
+                                        redirect-url="http://localhost:64402/"
+                                        response-type="id_token token"
+                                        button-class="btn btn-link"
+                                        scope="openid profile workflowlink">
+                                </oauth2>*@
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="quick-menu">
+        <nav class="navbar navbar-default" style="background-color: #243943;">
+            <div class="container" style="width:450px !important;">
+
+                <ul class="nav navbar-nav">
+                    <li><a href="#/Main" style="color: #ffffff; font-size:medium; font-weight:bold;"><i class="icon-home fa-lg"></i>MAIN</a></li>
+                    <li><a href="#/DataCapture" style="color: #ffffff; font-size:medium; font-weight:bold;"><i class="icon-search fa-lg"></i>DATA CAPTURE</a></li>
+                    <li><a href="#/Sketch" style="color: #ffffff; font-size:medium; font-weight:bold;"><i class="icon-search fa-lg"></i>SKETCH</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+<div id="main">
+    <div id="wrap">
+        <div id="divMainContent">
+
+            <div style="border-radius: 5px; width: auto; background-color: rgb(255, 255, 255);" class="container">
+                <div ng-view>
+                </div>
+                <hr>
+                <footer>
+                    <p>&copy; SCM Insurance Services 2015</p>
+                </footer>
+            </div> <!-- /container -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section scripts {
+
+}
